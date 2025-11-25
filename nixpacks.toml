@@ -5,4 +5,4 @@ nixPkgs = ['maven', 'jdk21']
 cmds = ['mvn clean install -DskipTests']
 
 [start]
-cmd = 'java -jar target/Attendance-0.0.1-SNAPSHOT.jar'
+cmd = 'java -Dserver.port=$PORT -jar target/Attendance-0.0.1-SNAPSHOT.jar'
